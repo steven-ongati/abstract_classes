@@ -1,0 +1,10 @@
+<?php
+require_once 'AbstractEvent.php';
+require_once 'Event.php';
+
+// Instantiate a subclass instance
+$event = new Event();
+
+// Call the method and retrieve the object it builds
+$newEvent = $event->createEvent('Sample Event', '2023-12-31', 'Virtual');
+?>
